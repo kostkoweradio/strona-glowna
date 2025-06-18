@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.hero {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-image: url('TUTAJ-WSTAW-LINK-DO-OBRAZU');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.text-box {
+  max-width: 600px;
+}
+
+.text-box h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.text-box h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.text-box p {
+  font-size: 1.3em;
+}
+
+.opis {
+  padding: 3em 5%;
+  background: #f0f0f0;
+}
+
+.opis h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.opis p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
