@@ -55,3 +55,65 @@ body, html {
   font-size: 1.2em;
   line-height: 1.6;
 }
+
+/* Sekcja podcasty */
+.podcasty {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+}
+
+.podcasty h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.podcast-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.podcast {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.podcast h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+}
+
+.podcast p {
+  margin: 0 0 1em 0;
+  font-size: 1rem;
+}
+
+.podcast a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.podcast a:hover {
+  text-decoration: underline;
+}
+
+/* Opcjonalnie responsywność */
+@media (max-width: 600px) {
+  .podcasty {
+    padding: 0 10px;
+  }
+
+  .podcast h3 {
+    font-size: 1.1rem;
+  }
+
+  .podcast p {
+    font-size: 0.9rem;
+  }
+}
