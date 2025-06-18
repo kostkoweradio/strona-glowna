@@ -1,3 +1,5 @@
+
+/* Reset i box sizing */
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,64 @@
 }
 
 body, html {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   background: #fff;
   color: #000;
+  scroll-behavior: smooth;
 }
 
+/* MENU GÓRNE - wąski pasek */
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5%;
+  background-color: #222;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 50px; /* wysokość paska */
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.menu-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.menu-right {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.menu-link:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+/* HERO */
 .hero {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -41,6 +96,7 @@ body, html {
   font-size: 1.3em;
 }
 
+/* Opis */
 .opis {
   padding: 3em 5%;
   background: #f0f0f0;
@@ -103,29 +159,17 @@ body, html {
   text-decoration: underline;
 }
 
-/* Opcjonalnie responsywność */
-@media (max-width: 600px) {
-  .podcasty {
-    padding: 0 10px;
-  }
-
-  .podcast h3 {
-    font-size: 1.1rem;
-  }
-
-  .podcast p {
-    font-size: 0.9rem;
-  }
+/* Radio na żywo */
+.radio-na-zywo {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .radio-na-zywo h2 {
-  text-decoration: none; /* upewniamy się, że to nie jest link */
-  cursor: default;       /* zwykły kursor, nie wskazujący na link */
   margin-bottom: 20px;
-  pointer-events: none !important;
-  cursor: default !important;
-  user-select: text; /* żeby można było zaznaczać tekst normalnie */
-  }
+  user-select: none;
 }
 
 .btn-radio {
@@ -142,64 +186,40 @@ body, html {
 
 .btn-radio:hover {
   background-color: #c2185b;
-  }
-
-/* MENU GÓRNE */
-.main-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5%;
-  background-color: #222;
-  color: white;
-  font-family: 'Poppins', Arial, sans-serif;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-.menu-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.menu-logo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.menu-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.menu-right {
-  display: flex;
-  gap: 25px;
-}
-
-.menu-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.menu-link:hover {
-  color: #e91e63;
-  text-decoration: underline;
-}
-
-/* Responsywność na małe ekrany */
+/* Responsywność */
 @media (max-width: 600px) {
   .main-menu {
     flex-direction: column;
-    gap: 10px;
+    height: auto;
+    padding: 10px 5%;
   }
   .menu-right {
     gap: 15px;
+  }
+
+  .text-box h1 {
+    font-size: 2em;
+  }
+
+  .text-box h2 {
+    font-size: 1.5em;
+  }
+
+  .text-box p {
+    font-size: 1.1em;
+  }
+
+  .podcasty {
+    padding: 0 10px;
+  }
+
+  .podcast h3 {
+    font-size: 1.1rem;
+  }
+
+  .podcast p {
+    font-size: 0.9rem;
   }
 }
