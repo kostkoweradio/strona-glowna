@@ -122,6 +122,10 @@ body, html {
   text-decoration: none; /* upewniamy się, że to nie jest link */
   cursor: default;       /* zwykły kursor, nie wskazujący na link */
   margin-bottom: 20px;
+  pointer-events: none !important;
+  cursor: default !important;
+  user-select: text; /* żeby można było zaznaczać tekst normalnie */
+  }
 }
 
 .btn-radio {
