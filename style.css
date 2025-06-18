@@ -109,6 +109,37 @@ body, html {
     padding: 0 10px;
   }
 
+  .radio-na-zywo {
+  max-width: 600px;
+  margin: 40px auto 60px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+}
+
+.radio-na-zywo h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.btn-radio {
+  display: inline-block;
+  background-color: #e91e63;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-radio:hover {
+  background-color: #c2185b;
+}
+
   .podcast h3 {
     font-size: 1.1rem;
   }
